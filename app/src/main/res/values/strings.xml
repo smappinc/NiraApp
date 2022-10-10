@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">IGNOU Results</string>
+
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+    <string name="home">Home</string>
+    <string name="about">About app</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate">Rate App</string>
+    <string name="more">More Apps</string>
+    <string name="share">Share</string>
+    <string name="exit">Exit</string>
+    <string name="notifications">Notifications</string>
+
+    <string name="open_link_external">Open Link External</string>
+    <string name="view_online">View Online</string>
+    <string name="download_external">Download External</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="copyright_txt">Copyright © 2022 NDMK \n All rights reserved</string>
+    <string name="about_app">About app</string>
+
+</resources>

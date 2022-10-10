@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:focusable="true"
+    app:cardElevation="3dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/parentLyt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <ImageView-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/image"-->
+<!--            android:padding="10dp"-->
+<!--            android:layout_width="2dp"-->
+<!--            android:layout_height="match_parent"/>-->
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:maxLines="2"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
