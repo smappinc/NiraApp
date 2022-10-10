@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         int id = item.getItemId();
         if (id == R.id.action_share) {
-            shareApp(MainActivity.this, "Share with your friends");
+            shareApp(MainActivity.this, "Download IGNOU Results app from below link:");
             return true;
         }
 

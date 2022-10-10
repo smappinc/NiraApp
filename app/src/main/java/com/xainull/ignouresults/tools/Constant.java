@@ -3,8 +3,8 @@ package com.xainull.ignouresults.tools;
 public class Constant {
 
     public static final String AD_STATUS = "1";
-    public static final String AD_NETWORK = "admob";
-    public static final String BACKUP_AD_NETWORK = "fan";
+    public static final String AD_NETWORK = "fan";
+    public static final String BACKUP_AD_NETWORK = "admob";
 
     public static final String ADMOB_BANNER_ID = "ca-app-pub-7848316093952741/5530819542";
     public static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-7848316093952741/2222716655";

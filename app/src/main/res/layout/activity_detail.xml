@@ -39,7 +39,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <com.solodroid.ads.sdk.ui.MediumNativeAdView
+                <com.solodroid.ads.sdk.ui.LargeNativeAdView
                     android:layout_margin="10dp"
                     android:id="@+id/nativeAd"
                     android:layout_width="match_parent"
