@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.solodroid.ads.sdk.ui.BannerAdView
+        <com.xposed73.ads.sdk.ui.BannerAdView
             android:id="@+id/adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

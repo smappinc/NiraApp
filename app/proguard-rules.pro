@@ -19,9 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
-#-keep public class com.xainull.ignouresults.models** { *; }
-#
-#-keep class com.wang.avi** { *; }
-#-keep class com.wang.avi.indicators** { *; }
-#
-#-keep class * extends android.webkit.WebChromeClient { *; }
+
+-keep public class com.xainull.ignouresults.models** { *; }
+-keep class * extends android.webkit.WebChromeClient { *; }

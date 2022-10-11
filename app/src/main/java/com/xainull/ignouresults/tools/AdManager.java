@@ -3,11 +3,11 @@ package com.xainull.ignouresults.tools;
 import android.app.Activity;
 
 import com.xainull.ignouresults.BuildConfig;
-import com.solodroid.ads.sdk.format.AdNetwork;
-import com.solodroid.ads.sdk.format.BannerAd;
-import com.solodroid.ads.sdk.format.InterstitialAd;
-import com.solodroid.ads.sdk.format.MediumRectangleAd;
-import com.solodroid.ads.sdk.format.NativeAd;
+import com.xposed73.ads.sdk.format.AdNetwork;
+import com.xposed73.ads.sdk.format.BannerAd;
+import com.xposed73.ads.sdk.format.InterstitialAd;
+import com.xposed73.ads.sdk.format.MediumRectangleAd;
+import com.xposed73.ads.sdk.format.NativeAd;
 
 public class AdManager {
 
