@@ -32,6 +32,9 @@ import com.xainull.ignouresults.R;
 
 import com.google.android.material.navigation.NavigationView;
 import com.xainull.ignouresults.tools.AdManager;
+import com.xposed73.ads.sdk.intents.BrowserIntents;
+import com.xposed73.ads.sdk.intents.MarketIntents;
+import com.xposed73.ads.sdk.intents.ShareIntents;
 
 import java.util.ArrayList;
 
@@ -132,10 +135,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        // main items
-//        if (id == R.id.action_home) {
-//            //
-//        }
+        if (id == R.id.action_home) {
+            //
+        }
 
         if (id == R.id.action_about_app) {
             showAboutDialog(this);
@@ -146,15 +148,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if (id == R.id.action_rate_app) {
-            rateApp(MainActivity.this);
+            MarketIntents.from(this).showInGooglePlay(BuildConfig.APPLICATION_ID).show();
         }
 
         if (id == R.id.action_more_app) {
-            moreApps(MainActivity.this, "https://play.google.com/store/apps/dev?id=5947475589044688365");
+            BrowserIntents.from(this).openLink("https://play.google.com/store/apps/dev?id=5947475589044688365").show();
         }
 
         if (id == R.id.action_share_app) {
-            shareApp(MainActivity.this, "Share with your friends");
+            ShareIntents.from(this).shareText("Download ",  "Download: " + getString(R.string.app_name) + " App\n\nhttps://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID).show();
         }
 
         if (id == R.id.action_exit) {
@@ -212,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         int id = item.getItemId();
         if (id == R.id.action_share) {
-            shareApp(MainActivity.this, "Download IGNOU Results app from below link:");
+            ShareIntents.from(this).shareText("Download ",  "Download: " + getString(R.string.app_name) + " App\n\nhttps://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID).show();
             return true;
         }
 
@@ -261,22 +263,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         dialog.show();
     }
 
-    public static void shareApp(Activity activity, String title) {
-        Intent sendIntent = new Intent();
-        sendIntent.setAction(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, title + "\n\n" + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID);
-        sendIntent.setType("text/plain");
-        activity.startActivity(sendIntent);
-    }
-
-    public static void rateApp(Activity activity) {
-        activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID)));
-    }
-
-    public static void moreApps(Activity activity, String moreAppsUrl) {
-        activity.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(moreAppsUrl)));
-    }
-
     public static void showAboutDialog(Activity activity) {
         LayoutInflater layoutInflater = LayoutInflater.from(activity);
         View view = layoutInflater.inflate(R.layout.about_dialog, null);
@@ -286,15 +272,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         alert.setView(view);
         alert.setPositiveButton("OK", (dialog, which) -> dialog.dismiss());
         alert.show();
-    }
-
-    public static void sendEmail(Activity activity, String devEmail){
-        Intent email = new Intent(Intent.ACTION_SEND);
-        email.putExtra(Intent.EXTRA_EMAIL, new String[]{devEmail});
-        email.putExtra(Intent.EXTRA_SUBJECT, "Subject");
-        email.putExtra(Intent.EXTRA_TEXT, "Message");
-        email.setType("message/rfc822");
-        activity.startActivity(Intent.createChooser(email, "Choose an Email client :"));
     }
 
 }

@@ -92,13 +92,4 @@ public class Tools {
         context.startActivity(jsoupIntent);
     }
 
-    public static String encode(String code) {
-        return encodeBase64(encodeBase64(encodeBase64(code)));
-    }
-
-    public static String encodeBase64(String code) {
-        byte[] valueEncoded = Base64.encode(code.getBytes(StandardCharsets.UTF_8), Base64.DEFAULT);
-        return new String(valueEncoded);
-    }
-
 }
