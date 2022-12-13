@@ -36,6 +36,9 @@ public class WebViewActivity extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.show();
 
+        adManager = new AdManager(this);
+        adManager.initAds();
+
         Intent intent = getIntent();
         title = intent.getStringExtra("title");
         link =  intent.getStringExtra("link");
@@ -67,14 +70,9 @@ public class WebViewActivity extends AppCompatActivity {
                 super.onPageFinished(view, url);
                 progressDialog.dismiss();
                 setTitle(view.getTitle());
-
+                adManager.loadBannerAd();
             }
         });
-
-        adManager = new AdManager(this);
-        adManager.initAds();
-        adManager.loadBannerAd(R.id.adView);
-        adManager.loadInterstitialAd(1, 1);
 
     }
 

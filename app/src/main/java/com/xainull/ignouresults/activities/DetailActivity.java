@@ -53,9 +53,7 @@ public class DetailActivity extends AppCompatActivity {
 
         adManager = new AdManager(this);
         adManager.initAds();
-        adManager.loadBannerAd(R.id.adView);
-        adManager.loadNativeAd(R.id.nativeAd);
-        adManager.loadInterstitialAd(1, 1);
+        adManager.loadNativeAd();
 
         loadLocal.setOnClickListener(new View.OnClickListener() {
             @Override

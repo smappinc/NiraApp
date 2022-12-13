@@ -39,7 +39,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <com.xposed73.ads.sdk.ui.MediumNativeAdView
+                <com.xposed73.ads.sdk.ui.SmallNativeAdView
                     android:layout_margin="10dp"
                     android:id="@+id/nativeAd"
                     android:layout_width="match_parent"
@@ -80,18 +80,19 @@
                                 android:layout_margin="4dp"
                                 android:id="@+id/openLocal"
                                 android:text="Open Link"
+                                android:visibility="gone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:icon="@drawable/ic_baseline_arrow_circle_down_24"/>
 
                             <com.google.android.material.button.MaterialButton
                                 style="@style/Widget.MaterialComponents.Button.Icon"
-                                app:backgroundTint="@android:color/holo_green_light"
+                                app:backgroundTint="@color/colorPrimary"
                                 android:layout_weight="1"
                                 android:textStyle="bold"
                                 android:layout_margin="4dp"
                                 android:id="@+id/openExternal"
-                                android:text="Open External"
+                                android:text="Open in Browser"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:icon="@drawable/ic_baseline_arrow_outward_24"/>
@@ -129,12 +130,6 @@
             </LinearLayout>
 
         </ScrollView>
-
-        <com.xposed73.ads.sdk.ui.BannerAdView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
 

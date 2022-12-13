@@ -37,19 +37,18 @@ public class AdManager {
                 .build();
     }
 
-    public void loadBannerAd(int placement) {
+    public void loadBannerAd() {
         bannerAd = new BannerAd.Builder(activity)
                 .setAdStatus(Constant.AD_STATUS)
                 .setAdNetwork(Constant.AD_NETWORK)
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobBannerId(Constant.ADMOB_BANNER_ID)
                 .setFanBannerId(Constant.FAN_BANNER_ID)
-                .setPlacementStatus(placement)
                 .setDarkTheme(false)
                 .build();
     }
 
-    public void loadMediumRectangleAd(int placement) {
+    public void loadMediumRectangleAd() {
         mediumRectangleAd = new MediumRectangleAd.Builder(activity)
                 .setAdStatus(Constant.AD_STATUS)
                 .setAdNetwork(Constant.AD_NETWORK)
@@ -57,19 +56,17 @@ public class AdManager {
                 .setAdMobBannerId(Constant.ADMOB_BANNER_ID)
                 .setFanBannerId(Constant.FAN_MREC_ID)
                 .setDarkTheme(false)
-                .setPlacementStatus(placement)
                 .build();
     }
 
-    public void loadInterstitialAd(int placement, int interval) {
+    public void loadInterstitialAd() {
         interstitialAd = new InterstitialAd.Builder(activity)
                 .setAdStatus(Constant.AD_STATUS)
                 .setAdNetwork(Constant.AD_NETWORK)
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobInterstitialId(Constant.ADMOB_INTERSTITIAL_ID)
                 .setFanInterstitialId(Constant.FAN_INTERSTITIAL_ID)
-                .setInterval(interval)
-                .setPlacementStatus(placement)
+                .setInterval(10)
                 .build();
     }
 
@@ -77,17 +74,15 @@ public class AdManager {
         interstitialAd.show();
     }
 
-    public void loadNativeAd(int placement) {
+    public void loadNativeAd() {
         nativeAd = new NativeAd.Builder(activity)
                 .setAdStatus(Constant.AD_STATUS)
                 .setAdNetwork(Constant.AD_NETWORK)
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobNativeId(Constant.ADMOB_NATIVE_ID)
                 .setFanNativeId(Constant.FAN_NATIVE_ID)
-                .setPlacementStatus(placement)
                 .setDarkTheme(false)
                 .build();
     }
-
 
 }

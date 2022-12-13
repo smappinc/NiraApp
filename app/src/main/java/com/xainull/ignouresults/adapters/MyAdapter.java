@@ -34,7 +34,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
         adManager = new AdManager((MainActivity)context);
         adManager.initAds();
-        adManager.loadInterstitialAd(1, 10);
+        adManager.loadInterstitialAd();
     }
 
     @Override

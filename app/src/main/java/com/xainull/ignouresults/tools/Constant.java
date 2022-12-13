@@ -3,13 +3,19 @@ package com.xainull.ignouresults.tools;
 public class Constant {
 
     public static final String AD_STATUS = "1";
-    public static final String AD_NETWORK = "fan";
-    public static final String BACKUP_AD_NETWORK = "admob";
+    public static final String AD_NETWORK = "admob";
+    public static final String BACKUP_AD_NETWORK = "none";
 
-    public static final String ADMOB_BANNER_ID = "ca-app-pub-7848316093952741/5530819542";
-    public static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-7848316093952741/2222716655";
-    public static final String ADMOB_NATIVE_ID = "ca-app-pub-7848316093952741/4657308305";
-    public static final String ADMOB_APP_OPEN_AD_ID = "ca-app-pub-7848316093952741/3152654946";
+    //ORIGINAL IDS
+    public static final String ADMOB_BANNER_ID = "ca-app-pub-7848316093952741/2479151692";
+    public static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-7848316093952741/4450708912";
+    public static final String ADMOB_NATIVE_ID = "ca-app-pub-7848316093952741/7539906680";
+    public static final String ADMOB_APP_OPEN_AD_ID = "ca-app-pub-7848316093952741/6226825014";
+
+//    public static final String ADMOB_BANNER_ID = "ca-app-pub-3940256099942544/6300978111";
+//    public static final String ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
+//    public static final String ADMOB_NATIVE_ID = "ca-app-pub-3940256099942544/2247696110";
+//    public static final String ADMOB_APP_OPEN_AD_ID = "ca-app-pub-3940256099942544/3419835294";
 
     public static final String FAN_BANNER_ID = "880867856210537_880870109543645";
     public static final String FAN_INTERSTITIAL_ID = "880867856210537_880870189543637";

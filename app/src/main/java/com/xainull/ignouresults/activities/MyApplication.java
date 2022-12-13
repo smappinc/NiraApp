@@ -12,7 +12,7 @@ public class MyApplication extends Application {
 
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
         OneSignal.initWithContext(this);
-        OneSignal.setAppId("4963ea44-3f31-44ad-b0b5-ce98435f0992");
+        OneSignal.setAppId("320d834f-0d41-48bf-9fc0-c5397c5bdcdb");
 
     }
 

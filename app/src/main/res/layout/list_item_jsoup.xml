@@ -27,6 +27,7 @@
 <!--            android:layout_height="match_parent"/>-->
 
         <TextView
+            android:textColor="@color/gnt_black"
             android:textStyle="bold"
             android:layout_marginStart="5dp"
             android:textSize="12sp"

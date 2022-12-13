@@ -71,8 +71,8 @@ public class JsoupActivity extends AppCompatActivity {
 
         adManager = new AdManager(this);
         adManager.initAds();
-        adManager.loadBannerAd(R.id.adView);
-        adManager.loadInterstitialAd(1, 1);
+        adManager.loadBannerAd();
+        adManager.loadInterstitialAd();
 
     }
 
