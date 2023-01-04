@@ -9,8 +9,8 @@ android {
         applicationId "com.xainull.ignouresults"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 19
-        versionName "3.0.4"
+        versionCode 20
+        versionName "3.0.5"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -53,6 +53,12 @@ dependencies {
     implementation 'com.onesignal:OneSignal:4.8.2'
 
     //Others
-    implementation 'com.github.xposed73:xposed73-ads-sdk:1.0.2'
+    implementation 'com.github.xposed73:afaqsdk:1.0.0'
 
+    //Multidex & application Life cycle
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-common-java8:2.5.1'
 }

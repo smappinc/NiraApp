@@ -26,18 +26,18 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afaqsdk.intents.BrowserIntents;
+import com.afaqsdk.intents.MarketIntents;
+import com.afaqsdk.intents.ShareIntents;
+import com.onesignal.OneSignal;
 import com.xainull.ignouresults.BuildConfig;
 import com.xainull.ignouresults.adapters.MyAdapter;
 import com.xainull.ignouresults.R;
 
 import com.google.android.material.navigation.NavigationView;
 import com.xainull.ignouresults.tools.AdManager;
-import com.xposed73.ads.sdk.intents.BrowserIntents;
-import com.xposed73.ads.sdk.intents.MarketIntents;
-import com.xposed73.ads.sdk.intents.ShareIntents;
 
 import java.util.ArrayList;
-
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -74,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         adManager.initAds();
         adManager.loadBannerAd();
         adManager.loadInterstitialAd();
+
+        OneSignal.promptForPushNotifications();
 
     }
 

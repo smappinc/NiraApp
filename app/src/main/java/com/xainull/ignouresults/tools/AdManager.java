@@ -2,12 +2,12 @@ package com.xainull.ignouresults.tools;
 
 import android.app.Activity;
 
+import com.afaqsdk.ads.format.AdNetwork;
+import com.afaqsdk.ads.format.BannerAd;
+import com.afaqsdk.ads.format.InterstitialAd;
+import com.afaqsdk.ads.format.MediumRectangleAd;
+import com.afaqsdk.ads.format.NativeAd;
 import com.xainull.ignouresults.BuildConfig;
-import com.xposed73.ads.sdk.format.AdNetwork;
-import com.xposed73.ads.sdk.format.BannerAd;
-import com.xposed73.ads.sdk.format.InterstitialAd;
-import com.xposed73.ads.sdk.format.MediumRectangleAd;
-import com.xposed73.ads.sdk.format.NativeAd;
 
 public class AdManager {
 
@@ -66,7 +66,7 @@ public class AdManager {
                 .setBackupAdNetwork(Constant.BACKUP_AD_NETWORK)
                 .setAdMobInterstitialId(Constant.ADMOB_INTERSTITIAL_ID)
                 .setFanInterstitialId(Constant.FAN_INTERSTITIAL_ID)
-                .setInterval(10)
+                .setInterval(7)
                 .build();
     }
 
@@ -82,6 +82,7 @@ public class AdManager {
                 .setAdMobNativeId(Constant.ADMOB_NATIVE_ID)
                 .setFanNativeId(Constant.FAN_NATIVE_ID)
                 .setDarkTheme(false)
+                .setNativeAdStyle("radio")
                 .build();
     }
 

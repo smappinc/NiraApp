@@ -39,7 +39,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <com.xposed73.ads.sdk.ui.SmallNativeAdView
+                <com.afaqsdk.ads.ui.SmallNativeAdView
                     android:layout_margin="10dp"
                     android:id="@+id/nativeAd"
                     android:layout_width="match_parent"
