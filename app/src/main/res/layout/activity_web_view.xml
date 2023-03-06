@@ -10,14 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.afaqsdk.ads.ui.BannerAdView
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"/>
-
-        <WebView
-            android:layout_below="@id/adView"
+        <im.delight.android.webview.AdvancedWebView
             android:id="@+id/webview"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

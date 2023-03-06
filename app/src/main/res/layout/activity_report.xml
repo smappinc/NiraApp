@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.ReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.omarshehe.forminputkotlin.FormInputSpinner
+                        android:layout_margin="10dp"
+                        android:id="@+id/problem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:form_array="@array/problems"
+                        app:form_hint="@string/select_your_problem"
+                        app:form_label="@string/select_your_problem"/>
+
+                    <com.omarshehe.forminputkotlin.FormInputAutoComplete
+                        android:layout_margin="10dp"
+                        android:id="@+id/station"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_array="@array/stations"
+                        app:form_height="@dimen/formInputInput_box_height"
+                        app:form_hint="@string/select_your_station"
+                        app:form_inputType="text"
+                        app:form_label="@string/select_your_station" />
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/yourname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="@string/name"
+                        app:form_inputType="text"
+                        app:form_label="@string/enter_your_name" />
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="21/11/2023"
+                        app:form_inputType="text"
+                        app:form_label="@string/enter_your_date" />
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/yourapplicationid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="@string/application_id"
+                        app:form_isMandatory="false"
+                        app:form_inputType="text"
+                        app:form_label="@string/enter_your_application_id" />
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/yourID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="@string/national_id"
+                        app:form_isMandatory="false"
+                        app:form_inputType="text"
+                        app:form_label="@string/enter_your_id_number" />
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/yourphonenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="@string/enter_your_phone_number"
+                        app:form_isMandatory="false"
+                        app:form_inputType="phoneNumber"
+                        app:form_label="@string/enter_your_phone_number" />
+
+
+                    <com.omarshehe.forminputkotlin.FormInputText
+                        android:layout_margin="10dp"
+                        android:id="@+id/staffName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_hint="@string/staffName"
+                        app:form_inputType="text"
+                        app:form_isMandatory="false"
+                        app:form_label="@string/enter_staff_name" />
+
+                    <com.omarshehe.forminputkotlin.FormInputMultiline
+                        android:layout_margin="10dp"
+                        android:id="@+id/comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:form_height="130dp"
+                        app:form_hint="@string/comments"
+                        app:form_isMandatory="false"
+                        app:form_label="@string/enter_comments"
+                        app:form_maxLength="500"/>
+
+                    <com.omarshehe.forminputkotlin.FormInputButton
+                        android:layout_margin="10dp"
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/button_submit"
+                        android:textSize="15sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/reportbuttontextcolor"
+                        app:cornerRadius="35dp" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

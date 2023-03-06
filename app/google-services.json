@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551282911419",
+    "project_id": "nira-mobile-android",
+    "storage_bucket": "nira-mobile-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551282911419:android:957e6dcae876a8e582219e",
+        "android_client_info": {
+          "package_name": "com.nira.niradroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551282911419-v4c2cq5bt5k3ms69kabkvd24uvmip8m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMRM_DMv5Bn9BaTNPm6_Zjb_AGNl1XJy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551282911419-v4c2cq5bt5k3ms69kabkvd24uvmip8m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

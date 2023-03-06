@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--app main color-->
+    <color name="purple_500">#bf212f</color>
+    <color name="purple_700">#A91825</color>
+    <color name="teal_200">#D73D4A</color>
+    <color name="teal_700">#078478</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- text color -->
+    <color name="textColor2">#e0e0e0</color>
+    <color name="textDescription">#A2A2A2</color>
+
+    <!-- text color for report activity -->
+    <color name="reportbuttontextcolor">#FFFFFFFF</color>
+    <color name="reportbackgroundcolor">#424242</color>
+
+</resources>

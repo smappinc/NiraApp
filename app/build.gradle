@@ -1,24 +1,25 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.xainull.ignouresults"
+        applicationId "com.nira.niradroid"
         minSdkVersion 21
         targetSdkVersion 33
-        versionCode 20
-        versionName "3.0.5"
+        versionCode 1
+        versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -31,16 +32,22 @@ android {
     lint {
         disable 'GradleDependency'
     }
-    namespace 'com.xainull.ignouresults'
+    namespace 'com.nira.niradroid'
 
 }
 
 dependencies {
 
+    // App UI/UX
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //Firebase Database
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-firestore:24.1.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
@@ -48,17 +55,13 @@ dependencies {
 
     implementation 'org.jsoup:jsoup:1.15.2'
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.1'
 
-    //Push notification
-    implementation 'com.onesignal:OneSignal:4.8.2'
+    //For Onboarding
+    implementation 'com.github.akshaaatt:Onboarding:1.0.4'
 
-    //Others
-    implementation 'com.github.xposed73:afaqsdk:1.0.0'
+    //For reports
+    implementation 'com.github.OmarShehe:FormInputs:1.0.5'
 
-    //Multidex & application Life cycle
-    implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'androidx.work:work-runtime:2.7.1'
-    implementation 'androidx.lifecycle:lifecycle-process:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.5.1'
-    implementation 'androidx.lifecycle:lifecycle-common-java8:2.5.1'
+
 }

@@ -20,5 +20,5 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep public class com.xainull.ignouresults.models** { *; }
--keep class * extends android.webkit.WebChromeClient { *; }
+#-keep public class com.nira.niradroid.models** { *; }
+#-keep class * extends android.webkit.WebChromeClient { *; }

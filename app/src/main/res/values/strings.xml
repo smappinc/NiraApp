@@ -1,24 +1,255 @@
 <resources>
 
-    <string name="app_name">IGNOU Results</string>
+    <string name="app_name">NIRA</string>
 
+    <!-- MAIN SCREEN ITEM TITLES -->
+    <string name="key_services">Access Our Key Services</string>
+    <string name="report">Report An Issue</string>
+    <string name="services_and_forms">Access Our Official Forms </string>
+    <string name="form_fees">Official NIRA Form Fees</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="news">News &amp; Updates</string>
+    <string name="publications">Publications</string>
+    <string name="careers">Careers</string>
+    <string name="tenders">Tenders</string>
+    <string name="tweets_by_nira">Tweets From @NIRA_Ug</string>
+
+    <!-- MAIN SCREEN ITEM SUB TITLES -->
+    <!-- the '\n' intels the compiler to skip a line-->
+    <string name="key_services_subtitle">• Track Status of Your Application or ID.\n• Verify that your Document was issued by NIRA.\n• Confirmation Of Information.\n• Generate a Child NIN Slip.\n</string>
+    <string name="report_issues_subtitle">If you would like to report an issue, tap here.</string>
+    <string name="services_and_forms_subtitle">Access forms related to Births, Deaths and Registration of Persons/Citizenship. For a selected form, it will be automatically saved in your downloads folder.</string>
+    <string name="form_fees_subtitle">Find out the latest information regarding Fees for forms. Eg National ID replacement or renewal fees among others.</string>
+    <string name="contact_us_subtitle">Contact us to inquire about information or if you have any concern about our services, we will get back to you as soon as we can.</string>
+    <string name="news_subtitle">Keep Up to date with the latest regarding NIRA and its services.</string>
+    <string name="publications_subtitle">Here you can access our official publications regarding holiday programs, form handbooks, FAQs among others.</string>
+    <string name="careers_subtitle">Come Work With US. Find out about any vacant positions available at NIRA </string>
+    <string name="tenders_subtitle">View all our tenders</string>
+    <string name="tweets_from_nira_subtitle">See the latest from the official NIRA Twitter page</string>
+
+    <!-- Report form screen strings -->
+    <string name="report_activity_heading">Report</string>
+    <string name="email">bazuwee@gmail.com</string>
+    <string name="problem_type">Problem type</string>
+    <string name="station">Station name</string>
+    <string name="date">Date</string>
+    <string name="staffName">Staff name</string>
+    <string name="comments">Comments</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="national_id">ID Number</string>
+    <string name="application_id">Application ID</string>
+
+    <string name="select_your_problem">Select the issue you are having</string>
+    <string name="select_your_station">Enter the NIRA Office</string>
+    <string name="enter_your_date">Enter the date of the incident</string>
+    <string name="enter_your_name">Enter your name(if you would like to stay anonymous, enter anonymous)</string>
+    <string name="enter_your_phone_number">Enter your phone number(optional)</string>
+    <string name="enter_your_id_number">Enter your NIN(If applicable)</string>
+    <string name="enter_your_application_id">Enter your Application ID Number(If applicable)</string>
+    <string name="enter_staff_name">Enter NIRA staff name (optional)</string>
+    <string name="enter_comments">Additional Comments</string>
+
+    <string name="button_submit">Submit</string>
+
+    <string-array name="problems">
+        <item>Delays in issuance of National ID card</item>
+        <item>National ID issued but not at station for pickup</item>
+        <item>Report corruption/extortion</item>
+        <item>Other(Enter the issue in the comments section below)</item>
+    </string-array>
+
+    <string-array name="stations">
+        <item>ABIM</item>
+        <item>ADJUMANI</item>
+        <item>AGAGO</item>
+        <item>ALEBTONG</item>
+        <item>AMOLATAR</item>
+        <item>AMUDAT</item>
+        <item>AMURIA</item>
+        <item>AMURU</item>
+        <item>APAC</item>
+        <item>ARUA</item>
+        <item>BUDAKA</item>
+        <item>BUDUDA</item>
+        <item>BUGIRI</item>
+        <item>BUGWERI</item>
+        <item>BUHWEJU</item>
+        <item>BUIKWE</item>
+        <item>BUKEDEA</item>
+        <item>BUKOMANSIMBI</item>
+        <item>BUKWO</item>
+        <item>BULAMBULI</item>
+        <item>BULIISA</item>
+        <item>BUNDIBUGYO</item>
+        <item>BUNYANGABU</item>
+        <item>BUSHENYI</item>
+        <item>BUSIA</item>
+        <item>BUTALEJA</item>
+        <item>BUTAMBALA</item>
+        <item>BUTEBO</item>
+        <item>BUVUMA</item>
+        <item>BUYENDE</item>
+        <item>DOKOLO</item>
+        <item>GOMBA</item>
+        <item>GULU</item>
+        <item>HOIMA</item>
+        <item>IBANDA</item>
+        <item>IGANGA</item>
+        <item>ISINGIRO</item>
+        <item>JINJA</item>
+        <item>KAABONG</item>
+        <item>KABALE</item>
+        <item>KABAROLE</item>
+        <item>KABERAMAIDO</item>
+        <item>KAGADI</item>
+        <item>KAKUMIRO</item>
+        <item>KALAKI</item>
+        <item>KALANGALA</item>
+        <item>KALIRO</item>
+        <item>KALUNGU</item>
+        <item>KAMPALA CENTRAL DIVISION OFFICE</item>
+        <item>KAMULI</item>
+        <item>KAMWENGE</item>
+        <item>KANUNGU</item>
+        <item>KAPCHORWA</item>
+        <item>KAPELEBYONG</item>
+        <item>KARENGA</item>
+        <item>KASANDA</item>
+        <item>KASESE</item>
+        <item>KATAKWI</item>
+        <item>KAWEMPE DIVISION OFFICE</item>
+        <item>KAYUNGA</item>
+        <item>KAZO</item>
+        <item>KIBAALE</item>
+        <item>KIBOGA</item>
+        <item>KIBUKU</item>
+        <item>KIKUUBE</item>
+        <item>KIRUHURA</item>
+        <item>KIRYANDONGO</item>
+        <item>KISORO</item>
+        <item>KITAGWENDA</item>
+        <item>KITGUM</item>
+        <item>KOBOKO</item>
+        <item>KOLE</item>
+        <item>KOTIDO</item>
+        <item>KUMI</item>
+        <item>KWANIA</item>
+        <item>KWEEN</item>
+        <item>KYANKWANZI</item>
+        <item>KYEGEGWA</item>
+        <item>KYENJOJO</item>
+        <item>KYOTERA</item>
+        <item>LAMWO</item>
+        <item>LIRA</item>
+        <item>LUUKA</item>
+        <item>LUWEERO</item>
+        <item>LWENGO</item>
+        <item>LYANTONDE</item>
+        <item>MADI-OKOLLO</item>
+        <item>MAKINDYE DIVISION OFFICE</item>
+        <item>MANAFWA</item>
+        <item>MARACHA</item>
+        <item>MASAKA</item>
+        <item>MASINDI</item>
+        <item>MAYUGE</item>
+        <item>MBALE</item>
+        <item>MBARARA</item>
+        <item>MITOOMA</item>
+        <item>MITYANA</item>
+        <item>MOROTO</item>
+        <item>MOYO</item>
+        <item>MPIGI</item>
+        <item>MUBENDE</item>
+        <item>MUKONO</item>
+        <item>NABILATUK</item>
+        <item>NAKAPIRIPIRIT</item>
+        <item>NAKASEKE</item>
+        <item>NAKASONGOLA</item>
+        <item>NAKAWA DIVISION OFFICE</item>
+        <item>NAMAYINGO</item>
+        <item>NAMISINDWA</item>
+        <item>NAMUTUMBA</item>
+        <item>NAPAK</item>
+        <item>NEBBI</item>
+        <item>NGORA</item>
+        <item>NTOROKO</item>
+        <item>NTUNGAMO</item>
+        <item>NWOYA</item>
+        <item>OBONGI</item>
+        <item>OMORO</item>
+        <item>OTUKE</item>
+        <item>OYAM</item>
+        <item>PADER</item>
+        <item>PAKWACH</item>
+        <item>PALLISA</item>
+        <item>RAKAI</item>
+        <item>RUBANDA</item>
+        <item>RUBAGA DIVISION OFFICE</item>
+        <item>RUBIRIZI</item>
+        <item>RUKIGA</item>
+        <item>RUKUNGIRI</item>
+        <item>RWAMPARA</item>
+        <item>SERERE</item>
+        <item>SHEEMA</item>
+        <item>SIRONKO</item>
+        <item>SOROTI</item>
+        <item>SSEMBABULE</item>
+        <item>TORORO</item>
+        <item>WAKISO</item>
+        <item>YUMBE</item>
+        <item>ZOMBO</item>
+    </string-array>
+
+
+    <!-- Other Strings -->
+    <string name="niraSlogan">Uganda • My • Country • My • Identity</string>
+    <string name="nira_in_full">National Identification &amp; Registration Authority</string>
     <string name="openDrawer">Open Drawer</string>
     <string name="closeDrawer">Close Drawer</string>
+    <string name="call">Call Us</string>
+
+
+    <!-- No internet Strings -->
+    <string name="No_internet">No Internet Connection</string>
+    <string name="Please_Check_your_Mobile_data_or_Wifi_network">Please Check your Mobile data or Wifi network.</string>
+    <string name="OK">OK</string>
+    <string name="woops">¯\\_(ツ)_/¯</string>
+    <string name="orientation">Enter landscape mode to display more information</string>
+
 
     <string name="home">Home</string>
-    <string name="about">About app</string>
-    <string name="feedback">Feedback</string>
-    <string name="rate">Rate App</string>
-    <string name="more">More Apps</string>
-    <string name="share">Share</string>
-    <string name="exit">Exit</string>
-    <string name="notifications">Notifications</string>
+    <string name="settings">Settings</string>
 
-    <string name="open_link_external">Open Link External</string>
-    <string name="view_online">View Online</string>
-    <string name="download_external">Download External</string>
-    <string name="privacy_policy">Privacy policy</string>
-    <string name="copyright_txt">Copyright © 2022 NDMK \n All rights reserved</string>
-    <string name="about_app">About app</string>
+    <string name="app_theme">Choose Application Theme</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="system_default">System Default</string>
+
+    <string name="copyright_txt">Copyright © 2023 NIRA \n All rights reserved</string>
+    <string name="about_app">About</string>
+    <string name="about_app_desc">The Mandate of NIRA is to create, manage, maintain &amp; operationalise the National Identification Register by registering all citizens of Uganda, registering non-citizens of Uganda who are lawfully residents in Uganda, registering births and deaths, assigning a unique National Identification Number to every person registered.</string>
+
+    <string name="exit">Exit</string>
+    <string name="exit_warning">Do you really want to exit?</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+
+    <!-- Onboarding strings -->
+    <string name="onboard_screen1_title">Welcome!\nTo The Official NIRA App</string>
+
+    <string name="onboard_screen2_title">Access Our Key Services</string>
+    <string name="onboard_screen2_desc">Use the app to Track the status of your application or ID, Verify that documents were issued by NIRA, among other things. </string>
+
+    <string name="onboard_screen3_title">Access Forms On The Go</string>
+    <string name="onboard_screen3_desc">With the app you can directly access various PDF format forms offline and find out the fees required for each form.</string>
+
+    <string name="onboard_screen4_title">Report An Issue</string>
+    <string name="onboard_screen4_desc">Report any issue or problem you are having directly through the app.</string>
+
+    <string name="aboutContentDescription">Nira App Logo</string>
+    <string name="check_your_internet_connection_and_try_again">Check your Internet Connection and Try Again</string>
+    <string name="try_again">Try Again</string>
+
 
 </resources>

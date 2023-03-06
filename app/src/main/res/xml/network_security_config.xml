@@ -2,7 +2,7 @@
 <network-security-config>
 
     <!-- For AdColony and Smaato, this permits all cleartext traffic: -->
-    <base-config cleartextTrafficPermitted="true">
+    <base-config cleartextTrafficPermitted="false">
         <trust-anchors>
             <certificates src="system"/>
         </trust-anchors>

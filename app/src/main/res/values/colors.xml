@@ -2,19 +2,22 @@
 <resources>
 
     <!--app main color-->
-    <color name="colorPrimary">#1b9df8</color>
-    <color name="colorPrimaryDark">#1685D3</color>
-    <color name="colorAccent">#FFE719</color>
+    <color name="purple_500">#bf212f</color>
+    <color name="purple_700">#A91825</color>
+    <color name="teal_200">#D73D4A</color>
+    <color name="teal_700">#078478</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 
-    <!--others-->
-    <color name="colorPlayButton">#009688</color>
-    <color name="colorRadioImageBorder">#E1E1E1</color>
-    <color name="colorStatusBarDark">#000000</color>
-    <color name="colorToolbarDark">#000000</color>
-    <color name="white">#FFFFFF</color>
-    <color name="colorGrey">#E1E1E1</color>
-    <color name="colorRipple">#7E7E7E</color>
-    <color name="progressBarColor">#FFE719</color>
-    <color name="semiTransparentColor">#80000000</color>
+    <!-- text color -->
+    <color name="textColor2">#bf212f</color>
+    <color name="textDescription">#FF000000</color>
+
+    <!-- text color for report activity -->
+    <color name="reportbuttontextcolor">#FFFFFFFF</color>
+    <color name="reportbackgroundcolor">#FFFFFFFF</color>
+
+    <!-- others -->
+    <color name="primaryTextColor">#00a5ff</color>
 
 </resources>
