@@ -20,6 +20,7 @@ import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.nira.niradroid.R;
+import com.shashank.sony.fancytoastlib.FancyToast;
 
 import java.util.Objects;
 
@@ -99,7 +100,7 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
                 mWebView.getSettings().setSupportZoom(true);
 
                 // Toast to alert the user to switch to landscape mode on their device for more information to be displayed
-                Toast.makeText(this,R.string.orientation,Toast.LENGTH_LONG).show();
+                FancyToast.makeText(this,getString(R.string.orientation),FancyToast.LENGTH_LONG, FancyToast.DEFAULT,false).show();
                 /*mWebView.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
                 mWebView.setScrollbarFadingEnabled(false);*/
 
@@ -108,8 +109,6 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
                 // Dismissing the progress dialog, loading no_internet_layout
                 progressDialog.dismiss();
                 setContentView(R.layout.no_internet_layout);
-                Toast.makeText(this,R.string.woops,Toast.LENGTH_LONG).show();
-
                 new AlertDialog.Builder(this) //alert the person knowing they are about to close
                         .setTitle(R.string.No_internet)
                         .setMessage(R.string.Please_Check_your_Mobile_data_or_Wifi_network)

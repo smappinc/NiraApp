@@ -63,5 +63,8 @@ dependencies {
     //For reports
     implementation 'com.github.OmarShehe:FormInputs:1.0.5'
 
+    //Fancy Toast
+    implementation 'io.github.shashank02051997:FancyToast:2.0.2'
+
 
 }

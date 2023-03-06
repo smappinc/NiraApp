@@ -51,6 +51,8 @@
     <string name="enter_comments">Additional Comments</string>
 
     <string name="button_submit">Submit</string>
+    <string name="failedtosend">Failed to send, please check your internet connection</string>
+    <string name="success">Your report has been sent</string>
 
     <string-array name="problems">
         <item>Delays in issuance of National ID card</item>

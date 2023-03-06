@@ -1,13 +1,18 @@
 package com.nira.niradroid.adapters;
 
+import static android.content.Context.CONNECTIVITY_SERVICE;
+
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -39,12 +44,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_main, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
+
+        // Get the connectivity manager
+        ConnectivityManager cm = (ConnectivityManager) mContext.getSystemService(CONNECTIVITY_SERVICE);
+
+        // Get the active network info
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
 
         holder.title.setText(mTitles.get(position));
         holder.subTitle.setText(mSubTitles.get(position));
@@ -99,9 +111,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
 
             // Load twitter
             else if(position==9){
-                Uri uri = Uri.parse("twitter://user?screen_name=NIRA_Ug");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                mContext.startActivity(intent);
+
+                if (networkInfo != null && networkInfo.isConnected()) {
+                    Uri uri = Uri.parse("twitter://user?screen_name=NIRA_Ug");
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    mContext.startActivity(intent);
+                }
+
+                else {
+                    new android.app.AlertDialog.Builder(mContext) //alert the person knowing they are about to close
+                            .setTitle(R.string.No_internet)
+                            .setMessage(R.string.Please_Check_your_Mobile_data_or_Wifi_network)
+                            .setPositiveButton(R.string.OK, null)
+                            //.setNegativeButton("No", null)
+                            .show();
+                }
             }
 
             // For the rest of the items, load the webview

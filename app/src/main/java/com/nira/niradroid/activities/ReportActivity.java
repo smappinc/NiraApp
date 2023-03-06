@@ -29,6 +29,7 @@ import com.omarshehe.forminputkotlin.FormInputButton;
 import com.omarshehe.forminputkotlin.FormInputMultiline;
 import com.omarshehe.forminputkotlin.FormInputSpinner;
 import com.omarshehe.forminputkotlin.FormInputText;
+import com.shashank.sony.fancytoastlib.FancyToast;
 
 import java.util.Objects;
 
@@ -110,7 +111,8 @@ public class ReportActivity extends AppCompatActivity {
             } else {
 
                 // A toast to show failure in sending of data
-                Toast.makeText(ReportActivity.this, "Failed to send your data, please check your internet connection", Toast.LENGTH_SHORT).show();
+                FancyToast.makeText(this,getString(R.string.failedtosend),FancyToast.LENGTH_LONG, FancyToast.ERROR,false).show();
+                finish();
             }
 
             // This commented out method was used to send data to a specified email. This method was dropped to be replaced by Firebase Firestore
@@ -193,7 +195,7 @@ public class ReportActivity extends AppCompatActivity {
                 // we are displaying a success toast message and dismissing the progress dialog.
                 // and returning to the MainActivity
                 progressDialog.dismiss();
-                Toast.makeText(ReportActivity.this, "Your report has been sent ^_____^", Toast.LENGTH_SHORT).show();
+                FancyToast.makeText(ReportActivity.this,getString(R.string.success),FancyToast.LENGTH_LONG,FancyToast.SUCCESS,false).show();
                 finish();
             }
         }).addOnFailureListener(new OnFailureListener() {
