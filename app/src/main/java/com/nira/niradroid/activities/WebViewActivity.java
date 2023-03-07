@@ -15,11 +15,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Message;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.Toast;
 
 import com.nira.niradroid.R;
+import com.shashank.sony.fancydialoglib.Animation;
+import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 import com.shashank.sony.fancytoastlib.FancyToast;
 
 import java.util.Objects;
@@ -109,11 +112,21 @@ public class WebViewActivity extends AppCompatActivity implements AdvancedWebVie
                 // Dismissing the progress dialog, loading no_internet_layout
                 progressDialog.dismiss();
                 setContentView(R.layout.no_internet_layout);
-                new AlertDialog.Builder(this) //alert the person knowing they are about to close
-                        .setTitle(R.string.No_internet)
-                        .setMessage(R.string.Please_Check_your_Mobile_data_or_Wifi_network)
-                        .setPositiveButton(R.string.OK, (dialog, which) -> finish())
-                        //.setNegativeButton("No", null)
+                FancyAlertDialog.Builder
+                        .with(this)
+                        .setTitle(getString(R.string.No_internet))
+                        .setBackgroundColor(getResources().getColor(R.color.purple_700))  // for @ColorRes use setBackgroundColorRes(R.color.colorvalue)
+                        .setMessage(getString(R.string.Please_Check_your_Mobile_data_or_Wifi_network))
+                        .setNegativeBtnText(getString(R.string.cancel))
+                        .setNegativeBtnBackgroundRes(R.color.negative)
+                        .setPositiveBtnBackgroundRes(R.color.black)  // for @ColorRes use setPositiveBtnBackgroundRes(R.color.colorvalue)
+                        .setPositiveBtnText(getString(R.string.OK))
+                        .setAnimation(Animation.SLIDE)
+                        .isCancellable(false)
+                        .setIcon(R.drawable.baseline_info_24, View.VISIBLE)
+                        .onPositiveClicked(dialog -> finish())
+                        .onNegativeClicked(dialog -> finish())
+                        .build()
                         .show();
             }
 

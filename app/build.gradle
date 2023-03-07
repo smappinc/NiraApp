@@ -66,5 +66,11 @@ dependencies {
     //Fancy Toast
     implementation 'io.github.shashank02051997:FancyToast:2.0.2'
 
+    //Fancy AlertDialog
+    implementation 'com.github.Shashank02051997:FancyAlertDialog-Android:0.3'
+
+    //About Page
+    implementation 'io.github.medyo:android-about-page:2.0.0'
+
 
 }

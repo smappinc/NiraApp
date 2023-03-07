@@ -149,7 +149,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if (id == R.id.action_about) {
-            showAboutDialog(this);
+            Intent intent = new Intent(this, AboutActivity.class);
+            startActivity(intent);
         }
 
         if (id == R.id.action_setting){
@@ -210,19 +211,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    //Initialize about dialog
-    @SuppressLint("SetTextI18n")
-    public static void showAboutDialog(Activity activity) {
-        LayoutInflater layoutInflater = LayoutInflater.from(activity);
-        View view = layoutInflater.inflate(R.layout.about_dialog, null);
-        TextView txtAppVersion = view.findViewById(R.id.txt_app_version);
-        txtAppVersion.setText("Version " + BuildConfig.VERSION_CODE + " (" + BuildConfig.VERSION_NAME + ")");
-        final AlertDialog.Builder alert = new AlertDialog.Builder(activity);
-        alert.setView(view);
-        alert.setPositiveButton("OK", (dialog, which) -> dialog.dismiss());
-        alert.show();
     }
 
     //Initialize exit dialog

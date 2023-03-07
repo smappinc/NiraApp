@@ -19,5 +19,6 @@
 
     <!-- others -->
     <color name="primaryTextColor">#00a5ff</color>
+    <color name="negative">#424242</color>
 
 </resources>

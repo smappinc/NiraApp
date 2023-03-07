@@ -1,6 +1,8 @@
 <resources>
 
     <string name="app_name">NIRA</string>
+    <string name="app_version">NIRA Android Version 1.0.0</string>
+    <string name="about_app_version">NIRA Android</string>
 
     <!-- MAIN SCREEN ITEM TITLES -->
     <string name="key_services">Access Our Key Services</string>
@@ -13,6 +15,7 @@
     <string name="careers">Careers</string>
     <string name="tenders">Tenders</string>
     <string name="tweets_by_nira">Tweets From @NIRA_Ug</string>
+    <string name="thank_you">An app to empower our citizens</string>
 
     <!-- MAIN SCREEN ITEM SUB TITLES -->
     <!-- the '\n' intels the compiler to skip a line-->
@@ -218,6 +221,7 @@
     <string name="OK">OK</string>
     <string name="woops">¯\\_(ツ)_/¯</string>
     <string name="orientation">Enter landscape mode to display more information</string>
+    <string name="cancel">Cancel</string>
 
 
     <string name="home">Home</string>
@@ -230,7 +234,7 @@
 
     <string name="copyright_txt">Copyright © 2023 NIRA \n All rights reserved</string>
     <string name="about_app">About</string>
-    <string name="about_app_desc">The Mandate of NIRA is to create, manage, maintain &amp; operationalise the National Identification Register by registering all citizens of Uganda, registering non-citizens of Uganda who are lawfully residents in Uganda, registering births and deaths, assigning a unique National Identification Number to every person registered.</string>
+    <string name="about_app_desc">The Mandate of NIRA is to create, manage, maintain &amp; operationalise the National Identification Register by registering all citizens of Uganda,\n\n Registering non-citizens of Uganda who are lawfully residents in Uganda, registering births and deaths, assigning a unique National Identification Number to every person registered.</string>
 
     <string name="exit">Exit</string>
     <string name="exit_warning">Do you really want to exit?</string>

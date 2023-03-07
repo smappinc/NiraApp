@@ -16,5 +16,6 @@
     <!-- text color for report activity -->
     <color name="reportbuttontextcolor">#FFFFFFFF</color>
     <color name="reportbackgroundcolor">#424242</color>
+    <color name="negative">#424242</color>
 
 </resources>
