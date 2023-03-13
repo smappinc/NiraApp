@@ -46,11 +46,11 @@
     <string name="select_your_problem">Select the issue you are having</string>
     <string name="select_your_station">Enter the NIRA Office</string>
     <string name="enter_your_date">Enter the date of the incident</string>
-    <string name="enter_your_name">Enter your name(if you would like to stay anonymous, enter anonymous)</string>
-    <string name="enter_your_phone_number">Enter your phone number(optional)</string>
-    <string name="enter_your_id_number">Enter your NIN(If applicable)</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="enter_your_id_number">Enter your NIN</string>
     <string name="enter_your_application_id">Enter your Application ID Number(If applicable)</string>
-    <string name="enter_staff_name">Enter NIRA staff name (optional)</string>
+    <string name="enter_staff_name">Enter NIRA staff name (If known)</string>
     <string name="enter_comments">Additional Comments</string>
 
     <string name="button_submit">Submit</string>
@@ -60,7 +60,7 @@
     <string-array name="problems">
         <item>Delays in issuance of National ID card</item>
         <item>National ID issued but not at station for pickup</item>
-        <item>Report corruption/extortion</item>
+        <item>Report corruption/extortion(Enter details in the comments</item>
         <item>Other(Enter the issue in the comments section below)</item>
     </string-array>
 

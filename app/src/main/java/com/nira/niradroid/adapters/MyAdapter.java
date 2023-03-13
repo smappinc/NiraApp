@@ -2,6 +2,7 @@ package com.nira.niradroid.adapters;
 
 import static android.content.Context.CONNECTIVITY_SERVICE;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;

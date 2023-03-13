@@ -96,6 +96,10 @@ public class ReportActivity extends AppCompatActivity {
                 station.setError("Please enter a station");
             } else if (TextUtils.isEmpty(nameofreporter)) {
                 yourname.setError("Please enter a name");
+            } else if (TextUtils.isEmpty(nationalid)) {
+                yourname.setError("Please enter your NIN");
+            } else if (TextUtils.isEmpty(phonenumber)) {
+                yourname.setError("Please enter your phone number");
             } else if(TextUtils.isEmpty((dateentered))) {
                 station.setError("Please enter the date");
             } else if (networkInfo != null && networkInfo.isConnected()) {
